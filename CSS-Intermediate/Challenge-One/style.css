@@ -1,0 +1,28 @@
+body{
+    background-color: #364371;
+}
+#wrap{
+    background-color: #5B7FBD;
+    display: flex;
+    width: 650px;
+    box-sizing: border-box;
+    margin: auto;
+}
+#nav{
+    background-color: #B0CFFF;
+    padding: 8px;
+    width: 450px;
+    box-sizing: border-box;
+}
+#content li{
+    list-style-type: none;
+}
+#content{
+    text-align: center;
+    padding: 20px;
+}
+.copyright{
+    background-color: #364371;
+    position: relative;
+    bottom: -56px;
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: peachpuff;
+}
+div{
+    border: dotted black 4px;
+    margin: auto;
+    background-color: white;
+    height:545px;
+    width: 500px;
+}
+h1{
+    border-bottom: dotted black 4px;
+    text-align: center;
+    padding: 2px;
+    margin: -4px;
+}
+p{
+    font-size: 0.8em;
+    margin: 20px 20px 0px 20px;
+    text-align: justify;
+}
+li::first-letter{
+    font-size: 1.5em;
+}
+li{
+    text-align: center;
+    list-style-type: none;
+}
+.copyright{
+    text-align: center;
+    font-size: 0.75em;
+}
