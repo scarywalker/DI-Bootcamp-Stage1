@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    display: flex;
+    flex-flow: column;
+    background-color: #002270;
+    color: #020027;
+    font-family: Quicksand;
+}
+header{
+    height: 100px;;
+}
+article div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+h1{
+    flex-basis: 80%;
+}
+div img{
+    max-width: 16%;
+    margin: 5px 0px;
+}
+div img.landscape{
+    max-width: 32%;
+}
+nav, aside{
+    display: flex;    
+    z-index: 1000;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+nav a{
+    border: outset 3px #ADC6FF;
+    border-radius: 4px;
+    margin: 2px;
+    flex-basis: 20%;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    background-color: #E0EAFF;
+    font-weight: bold;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textoinicial{
+    border: outset 6px #ADC6FF;
+    border-radius: 8px;
+    margin: 2px;
+}
+aside a{
+    border: outset 3px #ADC6FF;
+    border-radius: 4px;
+    margin: 0px;
+    flex-grow: 1;
+    align-self: stretch;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    text-align: center;
+    border-left: solid #00227038;
+    flex-basis: 79%;
+    padding: 15px;
+    margin: -2px;
+}
+#a{
+    display: flex;
+    align-content: stretch;    
+    background-color: honeydew;
+}
+aside{
+    align-items: flex-start;
+    flex-flow: column;
+    flex-basis: 20.3%;
+    max-height: 330px;
+    position: sticky;top: 0px;
+    background-color: #E0EAFF;
+
+}
+.atila{
+    width: 200px;
+    height: 200px;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+#Poetry_Lover img{
+    max-width: 50%;
+}
+div#videos{
+    display: inline-flex;
+    max-width: 30%;
+}
+video, iframe{
+    max-width: 30%;
+    margin: 5px 0px;
+}
+#primo{
+    pointer-events: none;
+}
+[id]::before {
+    content: '';
+    display: block;
+    height:      42px;
+    margin-top: -42px;
+    visibility: hidden;
+  }
+@media only screen and (max-width: 768px){
+    aside, #photo{
+        display: none;
+    }
+    main{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    nav{
+        position: sticky;top: 0px;
+    }
+    div img{
+        max-width: 24%;
+        margin: 5px 0px;
+    }
+    img:hover{
+        transform: scale(1.5);
+        transition: all .2s ease-in-out;
+    }
+    div img.landscape{
+        max-width: 48%;
+    }
+}
